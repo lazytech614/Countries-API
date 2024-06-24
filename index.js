@@ -32,9 +32,13 @@ function renderCountries(data) {
                 </div>
                 <div class="country-info-container">
                     <h2 class="country-name">${country.name.common}</h2>
-                    <p class="population"><span>Population:</span> ${country.population}</p>
+                    <p class="population"><span>Population:</span> ${country.population.toLocaleString(
+                      "en-IN"
+                    )}</p>
                     <p class="region"><span>Region:</span> ${country.region}</p>
-                    <p class="capital"><span>Capital:</span> ${country.capital}</p>
+                    <p class="capital"><span>Capital:</span> ${
+                      country.capital
+                    }</p>
                 </div>`;
     countriesContainer.append(countryCard);
   });

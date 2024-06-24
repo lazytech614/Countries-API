@@ -36,7 +36,7 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
       nativeName.innerText = `${country.name.common}`;
     }
 
-    population.innerText = `${country.population}`;
+    population.innerText = `${country.population.toLocaleString("en-IN")}`;
     region.innerText = `${country.region}`;
     subRegion.innerText = `${country.subregion}`;
 
