@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./country.css">
+    <script src="./country.js" defer></script>
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-content">
+            <div class="nav-container">
+                <section class="nav-section">
+                    <nav>
+                        <div class="left-nav">
+                            <h1 class="title"><a href="./index.html">Where in the world?</a></h1>
+                        </div>
+                        <div class="right-nav">
+                            <p><i class="ri-moon-line"></i><i class="ri-sun-fill"></i>&nbsp;&nbsp;<span class="theme-name">Dark Mode</span></p>
+                        </div>
+                    </nav>
+                </section>
+            </div>
+            <section class="search-filter-section">
+                <div class="back-btn">
+                    <i class="ri-arrow-left-line"></i>
+                    <p>Back</p>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section class="country-details">
+            <div class="main-content">
+                <div class="img-container">
+                    <img src="" alt="flag">
+                </div>
+                <div class="country-info">
+                    <h1 class="country-name"></h1>
+                    <div class="more-info">
+                        <div class="left-more-info">
+                            <p><b>Capital: </b><span class="capital"></span></p>
+                            <p><b>Native name: </b><span class="native-name"></span></p>
+                            <p><b>Population: </b><span class="population"></span></p>
+                            <p><b>Region: </b><span class="region"></span></p>
+                            <p><b>Sub-region: </b><span class="sub-region"></span></p>
+                        </div>
+                        <div class="right-more-info">
+                            <p><b>Top level domain: </b><span class="top-level-domain"></span></p>
+                            <p><b>Currencies: </b><span class="currencies"></span></p>
+                            <p><b>Languages: </b><span class="languages"></span></p>
+                        </div>
+                    </div>
+                    <div class="border-countries">
+                        <h4>Border countries: </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
